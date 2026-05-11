@@ -1,0 +1,395 @@
+﻿/**
+ * @name Kuroshitsuji Theme 
+ * @version 9.0
+ * @description Black Butler themed Discord - Elegant Blue & Turquoise
+ * @author elpanamanuel1
+
+ 
+ */
+/**
+     ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⠟⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⠀⠀⠈⠻⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⣶⣦⡀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⡇⠀⠀⠀⠀⠈⠙⢷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⠾⠋⠁⢸⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⡇⠀⠀⠀⠀⠀⠀⠀⠙⢷⣆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡾⠛⠁⠀⠀⠀⣿⣼⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡏⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⡾⠛⠁⠀⠀⠀⠀⠀⣸⡿⣿⠂⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⣿⠀⠀⠀⠀⠀⠶⠶⠶⠶⠶⠶⠿⠷⠶⠶⠤⣤⣤⣀⣀⡀⢀⣤⡾⠛⠁⠀⠀⠀⠀⠀⠀⠀⢠⣿⢣⡟⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣽⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡷⣸⠇⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⢣⡿⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣼⠃⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠇⠀⣀⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⡏⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣿⣿⡾⠛⠉⣉⣽⣿⣶⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⠶⠛⢛⣿⣿⣷⣶⣤⣀⠀⠀⠀⠀⠀⠀⢸⣿⡀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢰⣾⠛⢉⣵⡟⣃⣤⣶⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⠀⣠⣾⠏⣡⣴⣾⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠀⠀⢈⡹⣇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠙⣷⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣀⣀⣀⣀⣰⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠶⠖⠲⠾⣿⣿⣦⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣠⣴⡾⠋⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠛⠻⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠈⠙⢿⣄⠀⠀⠀⠀
+⠀⠀⣿⡛⠉⠁⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⣄⠀⠀
+⠀⠀⣾⣷⣦⣀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣧⠀
+⠀⡀⠈⠻⢿⣿⣿⣷⠆⠀⠙⠻⠿⣿⣿⡿⢿⣿⠋⠀⠀⠀⣴⠇⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡆
+⠀⠻⣟⠛⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠿⣿⣆⣀⣠⣼⢿⣧⠀⠀⠀⢀⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⠿⣛⠹⣮⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷
+⠀⠀⠈⠻⢦⣤⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⢩⠿⠻⣯⢻⣷⣶⣿⡿⠋⠀⠀⠀⠉⠉⠉⠉⠁⠀⣐⣭⣾⡿⠋⢻⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿
+⠀⠀⠀⢀⣰⣿⣻⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣴⡿⠛⣍⠡⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡟
+⠀⠀⠀⠛⣿⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡿⠁
+⠀⠀⠀⢐⣿⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⠟⠀⠀
+⠀⠀⠀⣼⣿⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡾⠃⠀⠀⠀
+⠀⠀⠀⣸⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣶⡟⠀⠀⠀⠀⠀
+⠀⠀⣰⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠛⠀⠀⠀⠀⠀⠀
+⢠⣾⢿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡏⠀⠀⠀⠀⠀⠀⠀
+⠀⣰⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⣿⠀⠀⠀⠀⠀⠀⠀⠀
+⣾⢿⣾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠛⠀⠀⠀⠀⠀⠀⠀⠀
+⢀⣾⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⠀⠀⠀⠀⠀⠀⠀⠀⠀
+
+*/
+@import url("https://xcruxiex.github.io/themes/themes-cores/neutron.css");
+@import url("https://xcruxiex.github.io/themes/core/badges.css");
+@import url("https://xcruxiex.github.io/themes/core/custom-font.css");
+@import url("https://xcruxiex.github.io/themes/core/hljs.css");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+/*##########################################################################
+
+                 KUROSHITSUJI THEME - BLUE & TURQUOISE
+
+##########################################################################*/
+:root {
+    /* COLORS - Extracted from Kuroshitsuji image */
+    --themeColor1: rgb(107, 165, 160); /* Turquesa principal (rosas) #6ba5a0 */
+    --themeColor2: rgb(78, 122, 118); /* Turquesa oscuro #4e7a76 */
+    /* CUSTOM FONT */
+    --customFont: 'Quicksand', monospace;
+    /* HOME BUTTON */
+    --homeImage: url('https://i.imgur.com/M2VysDs.gif');
+    --homeImageSize: cover;
+    /* BACKGROUND */
+    --backgroundImage: url('https://i.imgur.com/Fw0QPMv.jpeg');
+    --backgroundColor: rgba(15, 20, 30, 0.85); /* Fondo MÁS oscuro para mayor contraste */
+    --backgroundPosition: center;
+    --backgroundSize: cover;
+    --backgroundRepeat: no-repeat;
+    --backgroundBlur: 0.6px; /* Leve desenfoque para que el texto resalte más */
+    --backgroundOpacity: .45; /* Imagen más tenue para que el texto se vea mejor */
+    /* CODE BLOCKS */
+    --backgroundCode: rgba(42, 63, 95, 0.9); /* Bloques de código más opacos */
+    --backgroundName: rgba(26, 35, 50, 0.85); /* Nombres más oscuros */
+}
+/* ============================================
+   SIDEBARS MÁS TRANSPARENTES
+   ============================================ */
+
+/* Sidebar IZQUIERDA - Lista de Canales (más transparente) */
+[class*="sidebar"]:not([class*="panels"]) {
+    background: rgba(10, 15, 22, 0.30) !important; /* Era 0.92, ahora 0.75 */
+    backdrop-filter: blur(2px) !important;
+    border-right: 1px solid rgba(107, 165, 160, 0.15) !important;
+}
+
+/* Sidebar DERECHA - Lista de Miembros/Amigos (más transparente) */
+[class*="membersWrap"],
+[class*="members"]:not([class*="member"]) {
+    background: rgba(10, 15, 22, 0.30) !important; /* Era 0.92, ahora 0.75 */
+    backdrop-filter: blur(12px) !important;
+    border-left: 1px solid rgba(107, 165, 160, 0.15) !important;
+}
+
+/* Panel inferior (donde está tu usuario) */
+[class*="panels"] {
+    background: rgba(8, 12, 18, 0.85) !important; /* Era 0.95, ahora 0.85 */
+    border-top: 1px solid rgba(107, 165, 160, 0.2) !important;
+}
+/* ============================================
+FONDOS OSCUROS EN LINKS DE TEXTO
+============================================ */
+/* Links de texto (URLs normales en mensajes) */
+[class*="message"] a[href],
+[class*="markup"] a[href] {
+    background: rgba(15, 20, 30, 0.85) !important;
+    padding: 3px 8px !important;
+    border-radius: 6px !important;
+    border-left: 3px solid rgba(107, 165, 160, 0.7) !important;
+    color: rgba(168, 196, 190, 1) !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(6px) !important;
+}
+
+    /* Hover en links de texto */
+    [class*="message"] a[href]:hover,
+    [class*="markup"] a[href]:hover {
+        background: rgba(20, 28, 40, 0.95) !important;
+        border-left-color: rgba(107, 165, 160, 1) !important;
+        color: rgba(180, 210, 205, 1) !important;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(107, 165, 160, 0.3) !important;
+        transform: translateX(2px) !important;
+    }
+
+/* ============================================
+   FONDOS SEMI-OSCUROS EN EMBEDS
+   ============================================ */
+
+/* Embeds (previews de links - YouTube, Twitter, etc.) */
+[class*="embed"],
+[class*="embedWrapper"],
+article[class*="embed"] {
+    background: rgba(15, 20, 30, 0.85) !important;
+    border-left: 4px solid rgba(107, 165, 160, 0.8) !important;
+    border-radius: 8px !important;
+    padding: 12px !important;
+    backdrop-filter: blur(8px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+    /* Hover en embeds */
+    [class*="embed"]:hover,
+    [class*="embedWrapper"]:hover {
+        background: rgba(20, 28, 40, 0.9) !important;
+        border-left-color: rgba(107, 165, 160, 1) !important;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5), 0 0 20px rgba(107, 165, 160, 0.2) !important;
+    }
+
+/* Contenedor de embeds */
+[class*="container"][class*="embed"] {
+    background: rgba(12, 18, 25, 0.8) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+/* Título del embed con brillo */
+[class*="embedTitle"],
+[class*="embed"] [class*="title"] a {
+    color: rgba(168, 196, 190, 1) !important;
+    text-shadow: 0 0 8px rgba(107, 165, 160, 0.4) !important;
+    background: none !important; /* Sin fondo doble */
+    padding: 0 !important; /* Sin padding doble */
+    border: none !important; /* Sin borde doble */
+}
+
+/* Descripción del embed */
+[class*="embedDescription"],
+[class*="embed"] [class*="description"] {
+    color: rgba(200, 220, 220, 0.9) !important;
+}
+
+/* Campos del embed (como YouTube video info) */
+[class*="embedFields"],
+[class*="embed"] [class*="field"] {
+    background: rgba(8, 12, 18, 0.6) !important;
+    border-radius: 6px !important;
+    padding: 8px !important;
+}
+
+/* Thumbnail/Imagen del embed */
+[class*="embedThumbnail"],
+[class*="embed"] img {
+    border-radius: 8px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Provider del embed (ej: YouTube, Twitter) */
+[class*="embedProvider"],
+[class*="embed"] [class*="provider"] {
+    color: rgba(107, 165, 160, 0.9) !important;
+}
+
+/* Footer del embed */
+[class*="embedFooter"],
+[class*="embed"] [class*="footer"] {
+    background: rgba(8, 12, 18, 0.5) !important;
+    border-top: 1px solid rgba(107, 165, 160, 0.2) !important;
+    padding: 8px !important;
+    border-radius: 0 0 6px 6px !important;
+}
+
+/* ============================================
+   FIX COMPLETO: ALINEACIÓN PERFECTA
+   ============================================ */
+
+/* RESETEAR TODAS las transformaciones y animaciones problemáticas */
+[class*="member"],
+[class*="member"] *,
+[class*="channel"],
+[class*="channel"] *,
+[class*="containerDefault"],
+[class*="containerDefault"] * {
+    transform: none !important;
+    animation: none !important;
+}
+
+/* Estructura correcta de miembros */
+[class*="member"] {
+    display: flex !important;
+    align-items: center !important;
+    padding: 6px 8px !important;
+    margin: 0 !important;
+    min-height: 42px !important;
+    box-sizing: border-box !important;
+}
+
+    /* Avatar alineado */
+    [class*="member"] [class*="avatar"],
+    [class*="member"] img[class*="avatar"] {
+        margin-right: 12px !important;
+        flex-shrink: 0 !important;
+        display: block !important;
+    }
+
+    /* Contenedor de nombre y decoradores */
+    [class*="member"] [class*="nameAndDecorators"] {
+        display: flex !important;
+        align-items: center !important;
+        flex: 1 !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    /* Nombre del usuario */
+    [class*="member"] [class*="name"],
+    [class*="member"] [class*="roleColor"] {
+        display: inline-block !important;
+        vertical-align: middle !important;
+        line-height: normal !important;
+        overflow: hidden !important;
+        text-overflow: ellipsis !important;
+        white-space: nowrap !important;
+    }
+
+/* Layout de canales correcto */
+[class*="containerDefault"],
+[class*="channel"] {
+    display: flex !important;
+    align-items: center !important;
+    padding: 6px 8px !important;
+    margin: 1px 0 !important;
+    min-height: 36px !important;
+    box-sizing: border-box !important;
+}
+
+/* ============================================
+   SCROLL FLUIDO OPTIMIZADO
+   ============================================ */
+
+/* Scroll suave en todas las listas */
+[class*="scroller"],
+[class*="scrollerBase"],
+[class*="content"] {
+    scroll-behavior: smooth !important;
+    will-change: auto !important;
+}
+
+/* Optimización de rendering */
+* {
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+}
+
+/* Scrollbar personalizada */
+::-webkit-scrollbar {
+    width: 14px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(5, 8, 12, 0.4) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(107, 165, 160, 0.6), rgba(78, 122, 118, 0.6) ) !important;
+    border-radius: 7px !important;
+    border: 3px solid rgba(5, 8, 12, 0.4) !important;
+    transition: background 0.2s ease !important;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, rgba(107, 165, 160, 0.9), rgba(78, 122, 118, 0.9) ) !important;
+    }
+
+/* ============================================
+   ANIMACIONES SUTILES (SIN AFECTAR LAYOUT)
+   ============================================ */
+
+/* Brillo SOLO en texto, no en contenedor */
+[class*="username"],
+[class*="headerText"] h3 {
+    text-shadow: 0 0 5px rgba(107, 165, 160, 0.4) !important;
+    transition: text-shadow 0.3s ease !important;
+}
+
+/* Brillo más intenso en nombres al hacer hover en el contenedor */
+[class*="member"]:hover [class*="name"],
+[class*="member"]:hover [class*="roleColor"] {
+    text-shadow: 0 0 8px rgba(107, 165, 160, 0.7) !important;
+    color: rgba(180, 210, 205, 1) !important;
+}
+
+/* Hover en miembros (SOLO fondo, sin mover nada) */
+[class*="member"]:hover {
+    background: rgba(107, 165, 160, 0.12) !important;
+}
+
+/* Hover en canales (SOLO fondo y borde, sin mover) */
+[class*="containerDefault"]:hover,
+[class*="channel"]:hover {
+    background: linear-gradient(90deg, rgba(107, 165, 160, 0.08), rgba(107, 165, 160, 0.15) ) !important;
+    border-left: 3px solid rgba(107, 165, 160, 0.8) !important;
+}
+
+/* Canal seleccionado */
+[class*="containerDefault"][class*="selected"],
+[class*="channel"][class*="selected"] {
+    background: linear-gradient(90deg, rgba(107, 165, 160, 0.15), rgba(107, 165, 160, 0.25) ) !important;
+    border-left: 4px solid rgba(107, 165, 160, 1) !important;
+}
+
+/* Brillo en nombre de canal al hover */
+[class*="containerDefault"]:hover [class*="name"],
+[class*="channel"]:hover [class*="channelName"] {
+    color: rgba(180, 210, 205, 1) !important;
+    text-shadow: 0 0 6px rgba(107, 165, 160, 0.5) !important;
+}
+
+/* ============================================
+   MEJOR CONTRASTE EN SIDEBARS TRANSPARENTES
+   ============================================ */
+
+/* Texto más brillante para compensar transparencia */
+[class*="sidebar"] [class*="name"],
+[class*="sidebar"] [class*="channelName"],
+[class*="members"] [class*="name"],
+[class*="member"] [class*="roleColor"] {
+    color: rgba(220, 235, 235, 1) !important;
+    font-weight: 500 !important;
+}
+
+/* Categorías con fondo para legibilidad */
+[class*="containerDefault"][class*="categoryHeader"] {
+    background: rgba(8, 12, 18, 0.5) !important;
+    
+}
+
+/* Grupos de miembros con fondo */
+[class*="membersGroup"] {
+    background: rgba(8, 12, 18, 0.4) !important;
+    padding: 4px 8px !important;
+}
+
+/* Iconos más visibles */
+[class*="sidebar"] svg,
+[class*="members"] svg {
+    opacity: 0.90 !important;
+}
+
+/* ============================================
+   TRANSICIONES SUAVES
+   ============================================ */
+
+/* Transiciones solo en propiedades que no afectan layout */
+[class*="member"],
+[class*="channel"],
+[class*="containerDefault"] {
+    transition: background-color 0.25s ease, border-color 0.25s ease !important;
+}
+
+/* Texto con transiciones suaves */
+[class*="name"],
+[class*="channelName"],
+[class*="roleColor"] {
+    transition: color 0.25s ease, text-shadow 0.25s ease !important;
+}
