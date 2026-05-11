@@ -86,7 +86,7 @@
 [class*="membersWrap"],
 [class*="members"]:not([class*="member"]) {
     background: rgba(10, 15, 22, 0.30) !important; /* Era 0.92, ahora 0.75 */
-    backdrop-filter: blur(12px) !important;
+    backdrop-filter: blur(1px) !important;
     border-left: 1px solid rgba(107, 165, 160, 0.15) !important;
 }
 
@@ -95,6 +95,7 @@
     background: rgba(8, 12, 18, 0.85) !important; /* Era 0.95, ahora 0.85 */
     border-top: 1px solid rgba(107, 165, 160, 0.2) !important;
 }
+
 /* ============================================
 FONDOS OSCUROS EN LINKS DE TEXTO
 ============================================ */
@@ -199,69 +200,6 @@ article[class*="embed"] {
     border-radius: 0 0 6px 6px !important;
 }
 
-/* ============================================
-   FIX COMPLETO: ALINEACIÓN PERFECTA
-   ============================================ */
-
-/* RESETEAR TODAS las transformaciones y animaciones problemáticas */
-[class*="member"],
-[class*="member"] *,
-[class*="channel"],
-[class*="channel"] *,
-[class*="containerDefault"],
-[class*="containerDefault"] * {
-    transform: none !important;
-    animation: none !important;
-}
-
-/* Estructura correcta de miembros */
-[class*="member"] {
-    display: flex !important;
-    align-items: center !important;
-    padding: 6px 8px !important;
-    margin: 0 !important;
-    min-height: 42px !important;
-    box-sizing: border-box !important;
-}
-
-    /* Avatar alineado */
-    [class*="member"] [class*="avatar"],
-    [class*="member"] img[class*="avatar"] {
-        margin-right: 12px !important;
-        flex-shrink: 0 !important;
-        display: block !important;
-    }
-
-    /* Contenedor de nombre y decoradores */
-    [class*="member"] [class*="nameAndDecorators"] {
-        display: flex !important;
-        align-items: center !important;
-        flex: 1 !important;
-        min-width: 0 !important;
-        overflow: hidden !important;
-    }
-
-    /* Nombre del usuario */
-    [class*="member"] [class*="name"],
-    [class*="member"] [class*="roleColor"] {
-        display: inline-block !important;
-        vertical-align: middle !important;
-        line-height: normal !important;
-        overflow: hidden !important;
-        text-overflow: ellipsis !important;
-        white-space: nowrap !important;
-    }
-
-/* Layout de canales correcto */
-[class*="containerDefault"],
-[class*="channel"] {
-    display: flex !important;
-    align-items: center !important;
-    padding: 6px 8px !important;
-    margin: 1px 0 !important;
-    min-height: 36px !important;
-    box-sizing: border-box !important;
-}
 
 /* ============================================
    SCROLL FLUIDO OPTIMIZADO
@@ -301,95 +239,3 @@ article[class*="embed"] {
         background: linear-gradient(180deg, rgba(107, 165, 160, 0.9), rgba(78, 122, 118, 0.9) ) !important;
     }
 
-/* ============================================
-   ANIMACIONES SUTILES (SIN AFECTAR LAYOUT)
-   ============================================ */
-
-/* Brillo SOLO en texto, no en contenedor */
-[class*="username"],
-[class*="headerText"] h3 {
-    text-shadow: 0 0 5px rgba(107, 165, 160, 0.4) !important;
-    transition: text-shadow 0.3s ease !important;
-}
-
-/* Brillo más intenso en nombres al hacer hover en el contenedor */
-[class*="member"]:hover [class*="name"],
-[class*="member"]:hover [class*="roleColor"] {
-    text-shadow: 0 0 8px rgba(107, 165, 160, 0.7) !important;
-    color: rgba(180, 210, 205, 1) !important;
-}
-
-/* Hover en miembros (SOLO fondo, sin mover nada) */
-[class*="member"]:hover {
-    background: rgba(107, 165, 160, 0.12) !important;
-}
-
-/* Hover en canales (SOLO fondo y borde, sin mover) */
-[class*="containerDefault"]:hover,
-[class*="channel"]:hover {
-    background: linear-gradient(90deg, rgba(107, 165, 160, 0.08), rgba(107, 165, 160, 0.15) ) !important;
-    border-left: 3px solid rgba(107, 165, 160, 0.8) !important;
-}
-
-/* Canal seleccionado */
-[class*="containerDefault"][class*="selected"],
-[class*="channel"][class*="selected"] {
-    background: linear-gradient(90deg, rgba(107, 165, 160, 0.15), rgba(107, 165, 160, 0.25) ) !important;
-    border-left: 4px solid rgba(107, 165, 160, 1) !important;
-}
-
-/* Brillo en nombre de canal al hover */
-[class*="containerDefault"]:hover [class*="name"],
-[class*="channel"]:hover [class*="channelName"] {
-    color: rgba(180, 210, 205, 1) !important;
-    text-shadow: 0 0 6px rgba(107, 165, 160, 0.5) !important;
-}
-
-/* ============================================
-   MEJOR CONTRASTE EN SIDEBARS TRANSPARENTES
-   ============================================ */
-
-/* Texto más brillante para compensar transparencia */
-[class*="sidebar"] [class*="name"],
-[class*="sidebar"] [class*="channelName"],
-[class*="members"] [class*="name"],
-[class*="member"] [class*="roleColor"] {
-    color: rgba(220, 235, 235, 1) !important;
-    font-weight: 500 !important;
-}
-
-/* Categorías con fondo para legibilidad */
-[class*="containerDefault"][class*="categoryHeader"] {
-    background: rgba(8, 12, 18, 0.5) !important;
-    
-}
-
-/* Grupos de miembros con fondo */
-[class*="membersGroup"] {
-    background: rgba(8, 12, 18, 0.4) !important;
-    padding: 4px 8px !important;
-}
-
-/* Iconos más visibles */
-[class*="sidebar"] svg,
-[class*="members"] svg {
-    opacity: 0.90 !important;
-}
-
-/* ============================================
-   TRANSICIONES SUAVES
-   ============================================ */
-
-/* Transiciones solo en propiedades que no afectan layout */
-[class*="member"],
-[class*="channel"],
-[class*="containerDefault"] {
-    transition: background-color 0.25s ease, border-color 0.25s ease !important;
-}
-
-/* Texto con transiciones suaves */
-[class*="name"],
-[class*="channelName"],
-[class*="roleColor"] {
-    transition: color 0.25s ease, text-shadow 0.25s ease !important;
-}
